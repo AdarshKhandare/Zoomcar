@@ -13,11 +13,9 @@
     <a href="./Sign up.html"><i class="fa-solid fa-arrow-left fa-2x"></i></a>
     <h2>Enter Mobile Number</h2>
 
-    <div id="signup">
+<div id="signup">
       
-     
-    
-    <div id="image">
+     <div id="image">
        
         <div>
             <img src="india.png" alt="">
@@ -31,7 +29,27 @@
         
       
     </div>
-    <input type="text" id="h1"  placeholder="Mobile Number" >
+         <input type="text"  id="h1" onkeyup="hello()"  placeholder="Mobile Number">
+     
 </div>
+<button type="text" id="h2" > CONTINUE</button>
 </body>
 </html>
+
+<script>
+    function hello(){
+        var inputvalue=document.querySelector("#h1").value
+    if(inputvalue.length===10)
+    {
+        var button=document.querySelector("#h2")
+        button.setAttribute("class","greencolor")
+        // button.setAttribute("disabled",false);
+    }
+       console.log(inputvalue);
+    }
+   
+document.querySelector("#h2").addEventListener("click",function(){
+    window.location.href = "login_otp.html"
+})
+
+</script>

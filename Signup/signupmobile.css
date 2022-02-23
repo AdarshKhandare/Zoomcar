@@ -10,7 +10,8 @@
         font-size: 20px;
         box-sizing: border-box;
        padding: 15px;
-       width: 40%;
+       width: 45%;
+       border: 1px solid green;
     }
     h2{
         text-align: left;
@@ -34,4 +35,23 @@
  #image > div > h3{
      margin-left: 10px;
      margin-top: 5px;
+ }
+ #h2{
+     /* display: flex; */
+     width: 40%;
+     height: 50px;
+     margin-left: 350px;
+     margin-top: 350px;
+     text-align: center;
+     font-size: 20px;
+     color:whitesmoke ; 
+     background-color: #e0e0e0; 
+   
+     border:none ;
+    border-radius: 2px;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+
+ }
+ #greencolor{
+     background-color: green;
  }
