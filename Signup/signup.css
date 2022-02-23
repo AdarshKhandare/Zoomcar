@@ -1,0 +1,50 @@
+#cont{
+    display: grid;
+    grid-template-columns: 400px;
+    grid-template-rows: 350px 50px 50px 50px 50px;
+    justify-content: center
+}
+
+#cont > div{
+    /* border: 1px solid black; */
+}
+ #image{
+     display: flex;
+     text-align: center;
+
+ }
+ #image > div > h3{
+     margin-left: 10px;
+     margin-top: 5px;
+ }
+ #flag{
+     border: 0px;
+     margin-top: 7px;
+     color: green;
+     height: 30px;
+ }
+ #no-outline{
+    border: none;
+    margin-top: 6px;
+    font-size: 18px;
+ }
+
+#email{
+display: flex;
+color: green;
+text-decoration: none;
+margin-top: 15px;
+font-family: sans-serif;
+}
+#zoom{
+display:flex;
+color:green;
+margin-top: 5px;
+font-size: 14px;
+font-family: sans-serif;
+
+}
+.logo{
+margin-top: 11px;
+cursor: pointer;
+}

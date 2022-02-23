@@ -1,0 +1,37 @@
+
+    #signup{
+        display: flex;
+        text-align: left;
+        margin-top: 50px;
+        margin-left: 360px;
+        gap: 20px;
+    }
+    #h1{
+        font-size: 20px;
+        box-sizing: border-box;
+       padding: 15px;
+       width: 40%;
+    }
+    h2{
+        text-align: left;
+        margin-top: 50px;
+        margin-left: 360px;
+    }
+    a{
+        text-align: left;
+        margin-top: 50px;
+        margin-left: 360px;
+    }
+    #image{
+     display: flex;
+     text-align: center;
+     border: 2px solid green;
+     height: 50px;
+     width:80px;
+     margin-top: 5px;
+
+ }
+ #image > div > h3{
+     margin-left: 10px;
+     margin-top: 5px;
+ }
