@@ -84,6 +84,30 @@
   width: 33%;
   height: 75%;
 }
+/*promo pictures*/
+#promo {
+  display: grid;
+  width: 100%;
+  height: 1424px;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: repeat(3, 1fr);
+  background: green;
+  row-gap: 20px;
+  column-gap: 20px;
+  margin: auto;
+}
+#promo > .box1,
+.box2,
+.box3,
+.box4,
+.box5,
+.box6,
+.box7 {
+  width: 50%;
+  height: 295px;
+  background: red;
+}
+
 .refer {
   display: flex;
   width: 100%;
@@ -110,47 +134,41 @@
   height: 295px;
   border: 1 px red;
 }
-.preferImg >
-.offer1,
+.preferImg > .offer1,
 .offer2,
 .offer3,
-.offer4{
+.offer4 {
   width: 20%;
   height: 288px;
- justify-content: center;
- margin: auto;
+  justify-content: center;
+  margin: auto;
 }
-.anchorAboutUs{
+.anchorAboutUs {
   width: 100%;
   height: 45px;
   margin: auto;
- 
 }
-.anchorAboutUs>h4{
+.anchorAboutUs > h4 {
   text-align: center;
 }
-.text{
-  width: 484px;
+.text {
+  width: 100%;
   height: 550px;
-
+  background: red;
 }
-.text >b{
-  text-align: left;
-  font-size: 18px;
-  margin-top: 5px;
-  background-color: blue;
+.text>.boldText {
+ 
+  background: blue;
 }
-.text >p {
-  text-align: left;
-  font-size: 18px;
-  margin-top: 5px;
+.text>.para {
+  
   background-color: aqua;
 }
-.copyRight{
+.copyRight {
   width: 100%;
   height: 48px;
 }
-.copyRight>h3{
+.copyRight > h3 {
   text-align: center;
   font-size: 18px;
 }
