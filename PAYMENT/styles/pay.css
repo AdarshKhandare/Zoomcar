@@ -42,7 +42,7 @@ body {
   padding-right: 10px;
   border-bottom: 0.1px solid grey;
 }
-footer {
+#footer {
   height: 80px;
   width: 99%;
   text-align: center;
