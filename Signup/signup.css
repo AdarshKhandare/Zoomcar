@@ -1,16 +1,19 @@
 #cont{
     display: grid;
     grid-template-columns: 400px;
-    grid-template-rows: 350px 50px 50px 50px 50px;
-    justify-content: center
+    grid-template-rows: 400px 50px 50px 50px 50px;
+    justify-content: center;
+    
 }
 
 #cont > div{
     /* border: 1px solid black; */
+    
 }
  #image{
      display: flex;
      text-align: center;
+
 
  }
  #image > div > h3{
