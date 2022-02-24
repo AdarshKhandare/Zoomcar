@@ -121,6 +121,21 @@ body {
   height: 50px;
   text-align: center;
   /* padding: 10px; */
+  
+}
+#greenDot{
+    width: 10px;
+    height: 10px;
+    background:green;
+    border-radius: 50%
+  
+}
+#redDot{
+  width: 10px;
+  height: 10px;
+  background:red;
+  border-radius: 50%
+
 }
 #promo {
   display: grid;
@@ -171,9 +186,9 @@ img {
 .refer {
   display: flex;
   width: 80%;
-  height: 200px;
+  height: 250px;
   margin: auto;
-
+  gap: 20px;
   margin-top: 200px;
   margin-bottom: 200px;
 }
@@ -183,35 +198,43 @@ img {
   width: 50%;
   height: 100%;
   margin: auto;
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
 }
 
-.leftRefer,
-.rightRefer > .referText1,
-.preferImg1 {
+/* .rightRefer > {
   width: 50%;
   height: 100%;
   margin: left;
   justify-content: center;
+} */
+.preferImg1 {
+  width: 50%;
+  height: 100%;
 }
-
+.referText1 {
+  text-align: left;
+  width: 50%;
+  height: 100%;
+  padding: 20px 20px 20px 20px;
+}
 .offerImg {
   display: flex;
   width: 80%;
-  height: 295px;
-
+  height: 100%;
+  gap: 10px;
   margin-top: 200px;
   margin: auto;
 }
-.preferImg > .offer1,
-.offer2,
-.offer3,
-.offer4 {
+.preferImg > div {
   width: 20%;
-  height: 288px;
+  height: 100%;
   justify-content: center;
   margin: auto;
 }
-.anchorAboutUs {
+.offer4 {
+  width: 10%;
+}
+/* .anchorAboutUs {
   width: 80%;
   height: 45px;
   margin: auto;
@@ -224,12 +247,17 @@ img {
   width: 80%;
   height: 60px;
   justify-content: center;
-}
+  margin: auto;
+} */
 .text {
   width: 80%;
   margin: auto;
-  height: 550px;
+  height: 583px;
   color: #1f1f1f;
+
+  /* margin-top: 50px; */
+  justify-content: center;
+  padding-top: 150px;
 }
 .text > b {
   text-align: left;
@@ -240,6 +268,7 @@ img {
   text-align: left;
   font-size: 12px;
   color: #1f1f1f;
+  justify-self: auto;
 }
 .copyRight {
   width: 100%;
@@ -249,11 +278,10 @@ img {
   text-align: center;
   font-size: 12px;
   margin: auto;
-  padding-bottom: 20px;
+  padding-bottom: 40px;
+  margin-bottom: 30px;
 }
-*/
-
-#nav-container {
+*/ #nav-container {
   position: fixed;
   height: 100vh;
   width: 100%;
@@ -267,12 +295,12 @@ img {
   height: calc(100% - 70px);
   visibility: hidden;
   opacity: 0;
-  transition: .3s;
+  transition: 0.3s;
   background: #000;
 }
 #nav-container:focus-within .bg {
   visibility: visible;
-  opacity: .6;
+  opacity: 0.6;
 }
 #nav-container * {
   visibility: visible;
@@ -294,14 +322,14 @@ img {
   pointer-events: auto;
   margin-left: 25px;
   touch-action: manipulation;
-  -webkit-tap-highlight-color: rgba(0,0,0,0);
+  -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
 }
 .icon-bar {
   display: block;
   width: 100%;
   height: 3px;
   background: #aaa;
-  transition: .3s;
+  transition: 0.3s;
 }
 .icon-bar + .icon-bar {
   margin-top: 5px;
@@ -311,13 +339,13 @@ img {
   pointer-events: none;
 }
 #nav-container:focus-within .icon-bar:nth-of-type(1) {
-  transform: translate3d(0,8px,0) rotate(45deg);
+  transform: translate3d(0, 8px, 0) rotate(45deg);
 }
 #nav-container:focus-within .icon-bar:nth-of-type(2) {
   opacity: 0;
 }
 #nav-container:focus-within .icon-bar:nth-of-type(3) {
-  transform: translate3d(0,-8px,0) rotate(-45deg);
+  transform: translate3d(0, -8px, 0) rotate(-45deg);
 }
 
 #nav-content {
@@ -331,9 +359,9 @@ img {
   height: calc(100% - 70px);
   background: #ececec;
   pointer-events: auto;
-  -webkit-tap-highlight-color: rgba(0,0,0,0);
+  -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
   transform: translateX(-100%);
-  transition: transform .3s;
+  transition: transform 0.3s;
   will-change: transform;
   contain: paint;
 }
@@ -348,11 +376,11 @@ img {
   padding: 10px 5px;
   display: block;
   text-transform: uppercase;
-  transition: color .1s;
+  transition: color 0.1s;
 }
 
 #nav-content li a:hover {
-  color: #BF7497;
+  color: #bf7497;
 }
 
 #nav-content li:not(.small) + .small {
@@ -366,4 +394,3 @@ ul {
   padding: 0;
   list-style: none;
 }
-
