@@ -108,11 +108,14 @@ body {
   padding: 0.1px 20px;
 }
 #home {
+  height: 15px;
+  width: 100%;
   margin-top: 20px;
 }
 #delivery {
   display: flex;
-  margin-top: 20px;
+  margin-top: 1px;
+  margin-bottom: 5px;
 }
 #image1 {
   height: 40px;
