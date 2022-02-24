@@ -5,8 +5,11 @@ body {
   margin: 0;
 }
 #container {
+  margin: auto;
   width: 100%;
-  height: 1500px;
+  height: 1900px;
+  
+ 
 }
 #navbar {
   width: 100%;
@@ -141,14 +144,16 @@ input#car {
   margin-left: 350px;
 }
 .footer {
+ 
   height: 110px;
   width: 100%;
   position: fixed;
   text-align: center;
   color: wheat;
   box-shadow: rgba(0, 0, 0, 0.56) 0px 0px 50px 0px;
-  margin-top: 175px;
+  margin-top: 205px;
   background: white;
+  margin-left: 0%;
 }
 
 #div {
@@ -175,3 +180,4 @@ input#car {
   text-align: center;
   font-size: 20px;
 }
+
