@@ -21,10 +21,10 @@ body{
 h1{
     text-align: center;
 }
-#tabl {
+/* #tabl {
     
 
-}
+} */
 table, tr, td{
     border: 1px solid black;
     border-collapse: collapse;
