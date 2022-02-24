@@ -69,3 +69,8 @@ img {
 #div1:last-child{
   border-bottom: none;
 }
+#div2 > button{
+  border: none;
+  background-color: white;
+}
+
