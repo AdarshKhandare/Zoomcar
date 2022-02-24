@@ -32,6 +32,7 @@ body {
 }
 .icon {
   margin: auto;
+  margin-left: 8px;
 }
 .icon > .icon1,
 .icon2,
@@ -131,8 +132,7 @@ body {
   margin: auto;
   justify-content: center;
 }
-#promo > div {
-}
+
 img {
   width: 100%;
   height: 238px;
@@ -166,32 +166,36 @@ img {
 .refer {
   display: flex;
   width: 80%;
-  height: 150px;
-  background: #f5f5f5;
+  height: 200px;
+  margin: auto;
+
+  margin-top: 200px;
+  margin-bottom: 200px;
+}
+.refer > .leftRefer,
+.rightRefer {
+  display: flex;
+  width: 50%;
+  height: 100%;
   margin: auto;
 }
-.topRefer > .referImg1,
-.referImg2 {
-  width: 125px;
-  height: 125px;
-  margin: auto;
+
+.leftRefer,
+.rightRefer > .referText1,
+.preferImg1 {
+  width: 50%;
+  height: 100%;
+  margin: left;
   justify-content: center;
 }
-.topRefer {
-  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
-}
-.topRefer > .referText1,
-.referText2 {
-  width: 301px;
-  height: 125px;
-  margin: auto;
-  justify-content: center;
-}
+
 .offerImg {
   display: flex;
   width: 80%;
   height: 295px;
-  background: #f5f5f5;
+
+  margin-top: 200px;
+  margin: auto;
 }
 .preferImg > .offer1,
 .offer2,
@@ -206,34 +210,39 @@ img {
   width: 80%;
   height: 45px;
   margin: auto;
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+  margin-top: 50px;
+  margin-bottom: 50px;
 }
-.anchorAboutUs > h4 {
-  text-align: center;
+
+.anchorAboutUs {
+  width: 80%;
+  height: 60px;
+  justify-content: center;
 }
 .text {
   width: 80%;
-
   margin: auto;
   height: 550px;
+  color: #1f1f1f;
 }
 .text > b {
   text-align: left;
-  font-size: 18px;
-  text-align: center;
+  font-size: 14px;
+  color: #1f1f1f;
 }
 .text > p {
   text-align: left;
-  font-size: 18px;
-  text-align: center;
+  font-size: 12px;
+  color: #1f1f1f;
 }
-/*.copyRight {
+.copyRight {
   width: 100%;
-  height: 48px;
   background: #f5f5f5;
 }
 .copyRight > h3 {
   text-align: center;
-  font-size: 18px;
+  font-size: 12px;
   margin: auto;
+  padding-bottom: 20px;
 }
-*/
