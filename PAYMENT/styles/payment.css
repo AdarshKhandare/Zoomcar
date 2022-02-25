@@ -1,11 +1,12 @@
 body {
-  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica,
-    Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
   color: #413a45;
+  margin: 0;
 }
 #container {
   width: 100%;
   height: 700px;
+ 
 }
 #parent {
   width: 100%;
@@ -28,17 +29,26 @@ body {
   color: white;
 }
 #div {
+  
   width: 50%;
-  height: 300px;
+  height: 0px;
   margin: auto;
+  display: grid;
+  
+ 
 }
 #div1 {
-  width: 100%;
+  width: 80%;
   height: 80px;
   display: flex;
   padding-right: 10px;
-  border-bottom: 0.1px solid grey;
-  margin: 2px 5px 0px 10px;
+  border-bottom: 0.1px solid lightgray;
+  
+  line-height: 10px;
+  margin: auto;
+  margin-bottom: -10px;
+  margin-top: 20px;
+  
 }
 #div2 {
   width: 30px;
@@ -51,3 +61,16 @@ img {
   height: 32px;
   width: 32px;
 }
+.para{
+  font-size: 12px;
+  color: rgb(173, 167, 167);
+}
+
+#div1:last-child{
+  border-bottom: none;
+}
+#div2 > button{
+  border: none;
+  background-color: white;
+}
+

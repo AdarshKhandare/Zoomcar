@@ -82,6 +82,12 @@ body {
   font: 18px;
   color: white;
   margin: 24px;
+  
+
+}
+.signup > a{
+ text-decoration: none;
+  color: white;
 }
 
 #booking {
@@ -122,11 +128,10 @@ body {
   height: 50px;
   text-align: center;
   margin: 0;
-  border: 1px solid rgb(202, 188, 188);
-  /* padding: 10px; */
   
+  /* padding: 10px; */
 }
-#greenDot{
+/* #greenDot{
     width: 10px;
     height: 10px;
     background:green;
@@ -139,7 +144,28 @@ body {
   background:red;
   border-radius: 50%
 
+} */
+/* .gg{
+  display: flex;
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+  margin-right: 30px;
+  
+  
+  
+
 }
+.gg :first-child{
+  margin: auto;
+   width: 60%;
+  height: 50px;
+  
+}
+.gg :last-child
+{
+  margin: auto;
+  width: 60%;
+  height: 50px;
+} */
 
 #mix{
  display: grid;
