@@ -295,13 +295,7 @@ img {
   padding-bottom: 40px;
   margin-bottom: 30px;
 }
-<<<<<<< HEAD
-*/ #nav-container {
-=======
-
-
-#nav-container {
->>>>>>> b94b887cf06639b458f3c9b8a689a488a1c370a1
+ #nav-container {
   position: fixed;
   height: 100vh;
   width: 100%;
