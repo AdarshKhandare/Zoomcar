@@ -134,7 +134,7 @@ function showCars(carDataobj){
 
         var imagedd = document.createElement("img");
 
-        imagedd.setAttribute("src", ele.image) ;
+        imagedd.setAttribute("src", ele.image);
 
         var detaildiv = document.createElement("div");
         detaildiv.style.lineHeight = "25px"
@@ -166,17 +166,18 @@ function showCars(carDataobj){
         priceM.innerText = ele.price;
 
         var bookN = document.createElement("button");
-        bookN.addEventListener("click",function(){
+        bookN.addEventListener("click",function(event){
             event.preventDefault();
             booknowclick(ele);
 
             // var bookcardetails = JSON.parse(localStorage.getItem("carDataBase")) 
             // console.log(ele)
 
-
+          window.location.href = "../PAYMENT/summary.html"
 
 
         })
+        
         bookN.innerText = "BOOK NOW"
         bookN.style.marginTop = "60px"
 
@@ -198,56 +199,79 @@ function showCars(carDataobj){
 function booknowclick(ele){
     // console.log(ele)
     bookNowobj.push(ele)
-
     localStorage.setItem("summaryData",JSON.stringify(bookNowobj));
 }
 
 
 
-// let ninty = [];
-// let onetwonty = [];
-// var data = JSON.parse(localStorage.getItem("carDataBase"));
 
-// function nintyfun() {
-    
-    
-//     // var data = JSON.parse(localStorage.getItem("carDataBase"));
-//     // console.log(data)
+function click(ele){
+  ele.target.style.background = "#10a310";
+}
 
-//     // data = await data.json();
+var itemsF = document.querySelectorAll(".list > .list-item");
+// console.log(itemsF.length);
 
-//     // let cars = data[city];
+for (var i = 0; i < itemsF.length; i++){
 
-//     data.forEach(function(ele){
-//         if (ele.seater == 5)
-//         {
-//             ninty.push(ele);
-//         }
-//     });
-
-//     // console.log(ninty)
+  itemsF[i].addEventListener("click",click);
   
-    
-//    // showData(ninty);
+}
+
+var seaterstack = [];
+function clicker90(ele){
+  showCars(carDataobj);
+  
+  var seaterF = document.querySelector(".list-item").value
+  // console.log(seaterF);
+  if(seaterF == "90")
+  {
+    console.log("ok")
+  }
+  carDataobj.forEach(function(ele){
+
+    if(carDataobj.seater == "5")
+    {
+       seaterstack.push(carDataobj.seater)
+    }
+    showCars(seaterstack)
+
+  })
+  
+  // seaterF.filter(function(ele){
+  //   console.log(ele);
+
+  // })
+      showCars(carDataobj);
+  
+}
+
+// function clicker5(ele){
+//   showCars(carDataobj);
+//   var seater5 = document.querySelector(".list-item").value
+//   console.log(seater5);
+//   if(seater5 == "5")
+//   {
+//     console.log("ok")
+//   }
 // }
-// showCars(ninty);
 
-// showCars(carDataobj);
-// nintyfun();
+// var value = document.querySelectorAll(".list > .list-item");
+// console.log(value.length);
 
-// async function onetwontyfun() {
-//     let data = await fetch("carDataBase");
+// for (var i = 0; i < value.length; i++){
 
-//     // data = await data.json();
+//   // value[i].addEventListener("click",clicker);
 
-//     // let cars = data[city];
+//   if( == 5)
+//   {
+//     value[i].addEventListener("click",clicker);
+//   }
 
-//     carDataBase.forEach((e) => {
-//         if (e.Seater == 6) {
-//             onetwonty.push(e);
-//         }
-//     });
-
-//     showData(onetwonty);
+  
 // }
+
+
+
+
 
