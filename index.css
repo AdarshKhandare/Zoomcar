@@ -79,13 +79,23 @@ body {
 
 .register {
   display: flex;
-}
-.signup {
   width: 114.64px;
   height: 24px;
+}
+.login {
   font: 18px;
   color: white;
-  margin: 24px;
+  margin: 20px 0px 0px 0px;
+  text-decoration: none;
+}
+.login > a {
+  text-decoration: none;
+  color: white;
+}
+.signup {
+  font: 18px;
+  color: white;
+  margin: 20px 0px 0px 0px;
 }
 .signup > a {
   text-decoration: none;
