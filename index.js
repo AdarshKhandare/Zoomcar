@@ -1,4 +1,4 @@
-var signupdetails= JSON.parse(localstorage.getItem("signupDetails"));
+// var signupdetails= JSON.parse(localstorage.getItem("signupDetails"));
 var signUp=JSON.parse(localStorage.getItem("signupDetails"));
 document.querySelector("#form").
 addEventListener("submit",myfunction);
