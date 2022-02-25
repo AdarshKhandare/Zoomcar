@@ -88,14 +88,15 @@ function formSubmit(event){
 
     for(var i=0; i<user.length; i++)
     {
-        if(user[i].email=email && user[i].pass==pass)
+        if(user[i].email == email && user[i].pass==pass)
         {
-            console.log("login Successful");
+             alert("login Successful");
             window.location.href="/index.html"
+            break;
         }
         else
         {
-            console.log("login Failed");
+            return (alert("login Failed"));
         }
     }
 
