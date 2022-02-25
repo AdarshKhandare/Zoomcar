@@ -9,24 +9,50 @@
 <style>
     #signup{
         text-align: left;
-        margin-top: 50px;
-        margin-left: 380px;
-        
+        margin-top: 45px;
+        margin-left: 450px;
     }
-    #h1{
+    #user{
         font-size: 20px;
         box-sizing: border-box;
        padding: 15px;
-       width: 55%;
+       width: 60%;
        border-color: green;
-       margin-top: -50px;
+       margin-top: -70px;
     }
+    #addr{
+    font-size: 20px;
+        box-sizing: border-box;
+       padding: 15px;
+       width: 60%;
+       border-color: green;
+       margin-top: 15px;
+     
+   }
+   #email{
+    font-size: 20px;
+        box-sizing: border-box;
+       padding: 15px;
+       width: 60%;
+       border-color: green;
+       margin-top: 15px;
+     
+   }
+   #pass{
+    font-size: 20px;
+        box-sizing: border-box;
+       padding: 15px;
+       width: 60%;
+       border-color: green;
+       margin-top: 15px;
+       margin-right:20px;
+   }
     #h2{
      /* display: flex; */
      width: 35%;
      height: 50px;
-     margin-left: 410px;
-     margin-top: 300px;
+     margin-left: 500px;
+     margin-top: 200px;
      text-align: center;
 
      font-size: 20px;
@@ -37,18 +63,11 @@
     box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
 
  }
- #h3{
-    font-size: 20px;
-        box-sizing: border-box;
-       padding: 15px;
-       width: 55%;
-       border-color: green;
-       margin-top: 15px;
-     
- }
- #h2:hover {
+  #h2:hover {
     background-color:#10a310;
   }
+ 
+
 
     
 </style>
@@ -57,11 +76,13 @@
     <form id="form">
     <div id="signup">
       <a href="./Sign up.html"><i class="fa-solid fa-arrow-left fa-2x"></i></a>
-    <h2>Enter Email ID</h2>
-    <p>We'll verify if the email is registered with us</p><br><br>
-    <input type="text" id="h1"  placeholder="Email ID" ><br>
+    <h2>Registration</h2>
+    <p>Email is registered with us</p><br><br>
+    <input type="text" id="user"  placeholder="Name" ><br>
+    <input type="text" id="addr"  placeholder="Address" ><br>
+    <input type="text" id="email"  placeholder="Email ID" ><br>
 
-    <input type="password" id="h3" placeholder="PASSWORD"></input>
+    <input type="password" id="pass" placeholder="PASSWORD">
 </div>
 <!-- <input type="submit" id="h2"  placeholder="CONTINUE" /> -->
 <input type="submit" id="h2"  value="CONTINUE" >
@@ -76,8 +97,10 @@ var hello= JSON.parse(localStorage.getItem("signupDetails")) || [];
 function myform(){
 event.preventDefault();
     var dataObj={
-        email:document.querySelector("#h1").value,
-        pass:document.querySelector("#h3").value,
+        name:document.querySelector("#user").value,
+        address:document.querySelector("#addr").value,
+        email:document.querySelector("#email").value,
+        pass:document.querySelector("#pass").value,
    };
 
 hello.push(dataObj)
