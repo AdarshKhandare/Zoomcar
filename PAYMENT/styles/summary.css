@@ -34,13 +34,12 @@ body {
 
 #parent {
   width: 40%;
-  height: 100px;
-  padding-left: 10px;
-  color: #383838;
-  margin: auto;
+  height: 150px;
   display: flex;
-  flex-wrap: wrap;
-  background-color: #f5f5f5;
+  margin:auto;
+  justify-content: space-between;
+  margin-top: 20px
+  
 }
 #p1 {
   width: 70%;
