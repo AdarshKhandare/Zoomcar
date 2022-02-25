@@ -219,33 +219,27 @@ for (var i = 0; i < itemsF.length; i++){
 }
 
 var seaterstack = [];
-function clicker90(ele){
-  showCars(carDataobj);
+function clicker90(){
   
   var seaterF = document.querySelector(".list-item").value
+  var data = JSON.parse(localStorage.getItem("carDataBase")) || [];
   // console.log(seaterF);
-  if(seaterF == "90")
-  {
-    console.log("ok")
-  }
-  carDataobj.forEach(function(ele){
+  
+  data.map(function(ele){
 
-    if(carDataobj.seater == "5")
+    if(ele.seater == "6")
     {
-       seaterstack.push(carDataobj.seater)
-    }
-    showCars(seaterstack)
-
-  })
+       seaterstack.push(ele);   
+    } 
+  });
+  // console.log(seaterstack)
+  showCars(seaterstack);
   
-  // seaterF.filter(function(ele){
-  //   console.log(ele);
-
-  // })
-      showCars(carDataobj);
-  
+  var filterFirst = localStorage.setItem("ninty",JSON.stringify(seaterstack));
+  showCars(carDataobj); 
 }
-
+// var seaterEx = JSON.parse(localStorage.getItem("ninty")) || [];
+// showCars(seaterEx);
 // function clicker5(ele){
 //   showCars(carDataobj);
 //   var seater5 = document.querySelector(".list-item").value
