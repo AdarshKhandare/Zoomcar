@@ -76,17 +76,19 @@ body {
   color: white;
   margin: 24px;
 }
+
+.register {
+  display: flex;
+}
 .signup {
   width: 114.64px;
   height: 24px;
   font: 18px;
   color: white;
   margin: 24px;
-  
-
 }
-.signup > a{
- text-decoration: none;
+.signup > a {
+  text-decoration: none;
   color: white;
 }
 
@@ -128,7 +130,7 @@ body {
   height: 50px;
   text-align: center;
   margin: 0;
-  
+
   /* padding: 10px; */
 }
 /* #greenDot{
@@ -167,10 +169,10 @@ body {
   height: 50px;
 } */
 
-#mix{
- display: grid;
- }
- /* #mix :nth-child(2){
+#mix {
+  display: grid;
+}
+/* #mix :nth-child(2){
    border-top: 0;
  }
  #mix :nth-child(1){
@@ -321,8 +323,7 @@ img {
   padding-bottom: 40px;
   margin-bottom: 30px;
 }
-
- #nav-container {
+#nav-container {
   position: fixed;
   height: 100vh;
   width: 100%;
