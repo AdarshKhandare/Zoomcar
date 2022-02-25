@@ -396,9 +396,9 @@ h3{font-size: 14px;
 font-weight: 500;}
 
 #location{
-    /* position: -webkit-sticky; */
+    position: -webkit-sticky;
     position: fixed;
-    margin-top: 10px;
+    margin-top: 0px;
     width: 100%;
     background-color: white;
 }
