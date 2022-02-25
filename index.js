@@ -1,4 +1,3 @@
-
 document.querySelector("#form").
 addEventListener("submit",myfunction);
 var toShowinFilter = JSON.parse(localStorage.getItem("myjourney")) || []
