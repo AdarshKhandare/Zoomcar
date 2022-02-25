@@ -1,7 +1,7 @@
 document.querySelector("#form").
 addEventListener("submit",myfunction);
 var toShowinFilter = JSON.parse(localStorage.getItem("myjourney")) || []
-function submit(event){
+function myfunction(event){
     event.preventDefault()
     var startJourney = document.querySelector("#start").value
     var endJourney = document.querySelector("#").value
