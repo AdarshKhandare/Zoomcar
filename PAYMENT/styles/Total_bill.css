@@ -45,7 +45,6 @@ body {
   justify-content: space-between;
   padding-right: 10px;
   border-bottom: 0.1px solid grey;
-  
 }
 #footer {
   height: 80px;
@@ -70,12 +69,17 @@ body {
   font-size: 20px;
 }
 
-#para{
+#para {
   margin-top: 5px;
   line-height: 2px;
   font-size: 12px;
   color: grey;
-  
 }
-#para>p{font-size: 16px;
-color: black;}
+#para > p {
+  font-size: 16px;
+  color: black;
+}
+button > a {
+  color: white;
+  text-decoration: none;
+}
