@@ -21,3 +21,7 @@ h3 {
   color: rgb(83, 15, 6);
   font-size: 30px;
 }
+
+::-webkit-scrollbar {
+  display: none;
+}
