@@ -16,7 +16,9 @@ function myfunction(event){
     
 }
 
+
 var signUp=JSON.parse(localStorage.getItem("signupDetails"));
+
     var log=document.querySelector(".login>a")
     var sign=document.querySelector(".signup>a");
     var customerName = signUp[signUp.length-1].name;
@@ -24,4 +26,4 @@ var signUp=JSON.parse(localStorage.getItem("signupDetails"));
    log.innerText = customerName;
    sign.innerText = "";
 
-   
+  
