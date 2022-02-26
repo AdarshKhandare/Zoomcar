@@ -8,13 +8,13 @@ showsummary(sdata)
 var headname = document.createElement("h2");
 headname.innerText = e.carName;
 headname.style.color = "white"
-var sumPrice = document.createElement("b")
+var sumPrice = document.createElement("p")
 sumPrice.innerText = e.price;
 
 var totalFare = document.createElement("p")
-sumPrice.innerText = e.price;
+totalFare.innerText = e.price;
 var finalTotal = document.createElement("b")
-sumPrice.innerText = e.price;
+finalTotal.innerText = e.price;
 
 document.querySelector("#n2").append(headname);
 document.querySelector("#sumPrice").append(sumPrice)
