@@ -11,7 +11,7 @@ headname.style.color = "white"
 var sumPrice = document.createElement("p")
 sumPrice.innerText = e.price;
 
-var totalFare = document.createElement("p")
+var totalFare = document.createElement("b")
 totalFare.innerText = e.price;
 var finalTotal = document.createElement("b")
 finalTotal.innerText = e.price;
