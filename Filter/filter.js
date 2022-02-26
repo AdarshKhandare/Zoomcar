@@ -111,6 +111,7 @@ filterpages.push(carDataobj);
 
 showCars(carDataobj);
 
+
 localStorage.setItem("carDataBase", JSON.stringify(carDataobj));
 
 
@@ -253,14 +254,17 @@ function clicker90(){
   var seaterF = document.querySelector(".list-item").value
   // var data = JSON.parse(localStorage.getItem("carDataBase")) || [];
   // console.log(seaterF);
-  
-  data.map(function(ele){
 
-    if(ele.seater == "6")
-    {
-       seaterstack.push(ele);   
-    } 
-  });
+  const yahooOnly = JSON.parse(carDataobj).filter(({seater}) => seater === '5');
+  
+  console.log(yahooOnly)
+  // data.map(function(ele){
+
+  //   if(ele.seater == "6")
+  //   {
+  //      seaterstack.push(ele);   
+  //   } 
+  // });
   // console.log(seaterstack)
   showCars(seaterstack);
   
@@ -304,8 +308,21 @@ function showfilter()
   
 // }
 
+// var pdata=JSON.parse(localStorage.getItem("carDataBase"))||[];
 
-var manual5=
+// .filter(function (i,n){
+//   return n.seater==='5';
+// });
+
+
+
+
+
+
+
+function clicker5(){
+
+  var manual5=
   [ {image: "https://s3-ap-southeast-1.amazonaws.com/zoomcar/photographs/original/c5d25b436da0aeb9ca1c25c86d8e85a1e9115aaf.JPG?1623135458",
   loc_km: "2.7 km Magrath Road (Garuda Mall",
   carName: "Renault Triber",
@@ -328,7 +345,7 @@ var manual5=
 
 // clicker5(manual5)
 
-function clicker5(){
+function show5(){
 
   manual5.map(function(ele){
 
@@ -441,9 +458,16 @@ function booknowclick(ele){
 // console.log(ele)
 bookNowobj.push(ele)
 localStorage.setItem("summaryData",JSON.stringify(bookNowobj));
+
+
+}
+show5(manual5)
+
 }
 
-console.log(manual5)
+
+
+
 
 
 
