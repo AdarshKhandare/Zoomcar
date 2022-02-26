@@ -17,13 +17,16 @@ body {
   display: flex;
 }
 
-#p1 {
+#n1 {
   width: 10px;
   height: 100%;
   padding: 30px;
   color: white;
 }
-#p2 {
+#arrow {
+  color: white;
+}
+#n2 {
   width: 20%;
   height: 80px;
   padding: 5px;
