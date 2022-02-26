@@ -226,9 +226,6 @@ function booknowclick(ele){
     localStorage.setItem("summaryData",JSON.stringify(bookNowobj));
 }
 
-
-
-
 function click(ele){
   ele.target.style.background = "#10a310";
 }
