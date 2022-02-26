@@ -96,16 +96,18 @@ seater: "5",
 rating: "4.3(53) . 13,234 kms driven",
 price: "₹1,105"},]
 
+
 filterpages.push(carDataobj);
 // console.log(carDataobj)
 
 
-showCars(carDataobj);
+
 
 
 localStorage.setItem("carDataBase", JSON.stringify(carDataobj));
 
 
+showCars(carDataobj);
 function showCars(carDataobj){
 
   
@@ -225,9 +227,6 @@ function booknowclick(ele){
     bookNowobj.push(ele)
     localStorage.setItem("summaryData",JSON.stringify(bookNowobj));
 }
-
-
-
 
 function click(ele){
   ele.target.style.background = "#10a310";
@@ -488,25 +487,38 @@ showsummary(sdata)
 
 
 
-var govind = JSON.parse(localStorage.getItem("signupDetails"))
+  // function kurta() {
+  //   var value1 = document.querySelector("#kurta").checked;
+  //   console.log(value1);
+  //   if (value1 == true) {
+  //     var kurta_item = allWomenDeta.filter(function (elem, index) {
+  //       return elem.type == "kurta";
+  //     });
+  //     displayDataWomen(kurta_item);
+  //   } else {
+  //     displayDataWomen(allWomenDeta)
+  //   }
+  // }
 
-console.log(govind)
-govindShow(govind)
 
-function govindShow(govind){
-
-  govind.map(function(e){
-
-    var xyz = document.createElement("h2")
-
-  xyz.innerText = e.name;
-  
-
-  document.querySelector(".signup").append(xyz)
+  var seat = document.querySelector("#seat1").addEventListener("click",function(){
+    clicker5()
+    console.log("chandan")
   })
+function clicker5(){
+  var value1 = document.querySelector("#seat1").value
+  if(value1 == true){
+    var seatIteam = carDataobj.filter(function(elem,index){
+     return elem.seater == "5"
+    });
+    showCars(seatIteam)
+  }
+  else{
+    showCars(carDataobj)
+  }
 
-  
 }
+  
 
 
 
