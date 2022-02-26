@@ -23,74 +23,87 @@ rating: "4.9 (56) · 37,136 kms driven",
 price: "₹707"},
 {
   image: "https://s3-ap-southeast-1.amazonaws.com/zoomcar/photographs/original/57b1b1b9180a56fba0156135ea6dc8e9f058303d.jpg?1621260558",
-loc_km: "2.7 km Magrath Road (Garuda Mall)",
-carName: "Renault Triber",
+loc_km: "3.0 km SANTACRUZ",
+carName: "Renault Wagon R",
 transmission: "Manual",
 fuelType: "Diesel",
 seater: "5",
-rating: "4.9 (56) · 37,136 kms driven",
-price: "₹600"  
+rating: "4.0 (56) · 13,136 kms driven",
+price: "₹788"  
 },
 {
-  image: "https://s3-ap-southeast-1.amazonaws.com/zoomcar/photographs/original/19eca74a7982804ba713dd9485861a7543422115.JPG?1638531037 ",
-loc_km: "2.7 km Magrath Road (Garuda Mall)",
-carName: "Trigo",
+image: "https://s3-ap-southeast-1.amazonaws.com/zoomcar/photographs/original/efa1e98bbb81150cf57c98df093de5899dcafcd5.jpg?1640674575",
+loc_km: "3.9 km MCGM Pay and Park (Near T2 International Airport)",
+carName: "Maruti Ertiga",
 transmission: "Manual",
+fuelType: "Petrol",
+seater: "7",
+rating: "4.9(36)·17,802 kms driven",
+price: "₹1,331"},
+{image: "https://s3-ap-southeast-1.amazonaws.com/zoomcar/photographs/original/61fbab1ef34ce59681271cd8969dd13725023ca4.JPG?1623066918",
+loc_km: "5.2 km KhoparKhainrane",
+carName: "Maruti Ertiga Hybrid",
+transmission: "Automatic",
 fuelType: "Diesel",
 seater: "7",
-rating: "4.9 (56) · 37,136 kms driven",
-price: "₹900"  
-},
-{
-  image: "https://s3-ap-southeast-1.amazonaws.com/zoomcar/photographs/original/efa1e98bbb81150cf57c98df093de5899dcafcd5.jpg?1640674575  ",
-loc_km: "2.7 km Magrath Road (Garuda Mall)",
-carName: "Renault Triber",
+rating: "4.7(53) . 1,234 kms driven",
+price: "₹1,173"},
+{image: "https://s3-ap-southeast-1.amazonaws.com/zoomcar/photographs/original/524fda673d85d7affc94f9c54ddb2ed1219d3a4d.JPG?1638612892",
+loc_km: "4.2 km Sewri",
+carName: "Maruti Dzire (Petrol)",
 transmission: "Manual",
-fuelType: "Diesel",
-seater: "6",
-rating: "4.9 (56) · 37,136 kms driven",
-price: "₹707"  
-},
-{
-  image: "https://s3-ap-southeast-1.amazonaws.com/zoomcar/photographs/original/61fbab1ef34ce59681271cd8969dd13725023ca4.JPG?1623066918  ",
-loc_km: "2.7 km Magrath Road (Garuda Mall)",
-carName: "Renault Triber",
+fuelType: "Petrol",
+seater: "5",
+rating: "4.1(53) . 12,234 kms driven",
+price: "₹1,004"},
+{image: "https://s3-ap-southeast-1.amazonaws.com/zoomcar/photographs/original/d748d92c90c3b84a32f4115da1e5bd3f3f352937.jpg?1615958311",
+loc_km: "5.1 km doreaa",
+carName: "Maruti Beleno (Petrol)",
 transmission: "Manual",
-fuelType: "Diesel",
-seater: "7",
-rating: "4.9 (56) · 37,136 kms driven",
-price: "₹707"  
-},
-{
-  image: "https://s3-ap-southeast-1.amazonaws.com/zoomcar/photographs/original/524fda673d85d7affc94f9c54ddb2ed1219d3a4d.JPG?1638612892 ",
-loc_km: "2.7 km Magrath Road (Garuda Mall)",
-carName: "Renault Triber",
+fuelType: "Petrol",
+seater: "5",
+rating: "4.6(53) . 22,234 kms driven",
+price: "₹1,104"},
+{image: "https://s3-ap-southeast-1.amazonaws.com/zoomcar/photographs/original/fd92e3998a840b8544df97c446a48c87c662b6d8.JPG?1623643752",
+loc_km: "5.2 km Sewri",
+carName: "Honda Jazz SV",
 transmission: "Manual",
-fuelType: "Diesel",
-seater: "6",
-rating: "4.9 (56) · 37,136 kms driven",
-price: "₹707"  
-},
-{
-  image: "https://s3-ap-southeast-1.amazonaws.com/zoomcar/photographs/original/d748d92c90c3b84a32f4115da1e5bd3f3f352937.jpg?1615958311",
-loc_km: "2.7 km Magrath Road (Garuda Mall)",
-carName: "Renault Triber",
+fuelType: "Petrol",
+seater: "5",
+rating: "4.9(53) . 32,134 kms driven",
+price: "₹1,144"},
+{image: "https://s3-ap-southeast-1.amazonaws.com/zoomcar/photographs/original/4424e7d205d37feda22e11b4465031a5b54cad5c.JPG?1622187205",
+loc_km: "14.2 km Malad West",
+carName: "Maruti Ignis ",
 transmission: "Manual",
+fuelType: "Petrol",
+seater: "5",
+rating: "5.0(53) . 7,234 kms driven",
+price: "₹974"},
+{image: "https://s3-ap-southeast-1.amazonaws.com/zoomcar/photographs/original/fb88b893d54a0220d775621564f74800f241fcbc.png?1584524717",
+loc_km: "15.2 km Evershine",
+carName: "Hyundai Xcent",
+transmission: "Automatic",
+fuelType: "Petrol",
+seater: "5",
+rating: "4.0(53) . 1,234 kms driven",
+price: "₹987"},
+{image: "https://s3-ap-southeast-1.amazonaws.com/zoomcar/photographs/original/505efec88be6f25bb3ffabbd6c6107629c88e169.jpg?1621260721",
+loc_km: "5.2 km Nerul",
+carName: "Datsum Redi-GO",
+transmission: "Automatic",
+fuelType: "Petrol",
+seater: "5",
+rating: "4.8(53) . 25,234 kms driven",
+price: "₹896"},
+{image: "https://s3-ap-southeast-1.amazonaws.com/zoomcar/photographs/original/e47541c407f8ee906e9fa81c43c732ada5614617.png?1584526352",
+loc_km: "10.2 km Koparkhairane",
+carName: "Ford Ecosport",
+transmission: "Automatic",
 fuelType: "Diesel",
-seater: "7",
-rating: "4.9 (56) · 37,136 kms driven",
-price: "₹707"  
-},
-{
-  image: "https://s3-ap-southeast-1.amazonaws.com/zoomcar/photographs/original/c5d25b436da0aeb9ca1c25c86d8e85a1e9115aaf.JPG?1623135458",
-loc_km: "2.7 km Magrath Road (Garuda Mall)",
-carName: "Renault Triber",
-transmission: "Manual",
-fuelType: "Diesel",
-seater: "6",
-rating: "4.9 (56) · 37,136 kms driven",
-price: "₹707"  
-}]
+seater: "5",
+rating: "4.3(53) . 13,234 kms driven",
+price: "₹1,105"},]
 
 filterpages.push(carDataobj);
 // console.log(carDataobj)
@@ -431,6 +444,43 @@ localStorage.setItem("summaryData",JSON.stringify(bookNowobj));
 }
 
 console.log(manual5)
+
+
+
+
+var sdata = JSON.parse(localStorage.getItem("myJourney"))
+// console.log(sdata)
+
+showsummary(sdata)
+ function showsummary(sdata){
+
+    sdata.map(function(e){
+
+      var top = document.createElement("h2")
+      top.innerText = "Start-Point =>"+" "+e.keyStart;
+
+      var bottom = document.createElement("h2");
+      bottom.innerText = "End-Point =>"+" "+e.keyEnd;
+
+      document.querySelector(".input").append(top)
+      document.querySelector(".input1").append(bottom)
+
+    });
+  }
+
+
+    var signUp=JSON.parse(localStorage.getItem("signupDetails"));
+    console.log(signUp);
+    var log=document.querySelector(".signup")
+    var sign=document.querySelector(".signup");
+    var customerName = signUp[signUp.length-1].name;
+
+    log.innerText = customerName;
+    sign.innerText = "";
+
+
+
+
 
 
 
