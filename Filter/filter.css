@@ -262,6 +262,17 @@ p {
     margin-bottom: 10px;
     border: 1px solid green;
     position:static;
+    text-align: center;
+    padding-bottom: 15px;
+    
+}
+.input1 {
+    width: 100%;
+    height: 50px;
+    margin-bottom: 10px;
+    border: 1px solid green;
+    position:static;
+    padding-bottom: 15px;
     
 }
 
@@ -402,6 +413,9 @@ font-weight: 500;}
     margin-top: 0px;
     width: 95%;
     background-color: white;
+    text-align: center;
+
+  
 }
 
 
