@@ -469,14 +469,6 @@ showsummary(sdata)
   }
 
 
-    var signUp=JSON.parse(localStorage.getItem("signupDetails"));
-    console.log(signUp);
-    var log=document.querySelector(".signup")
-    var sign=document.querySelector(".signup");
-    var customerName = signUp[signUp.length-1].name;
-
-    log.innerText = customerName;
-    sign.innerText = "";
 
 
 
