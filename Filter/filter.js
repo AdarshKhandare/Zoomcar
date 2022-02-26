@@ -100,12 +100,13 @@ filterpages.push(carDataobj);
 // console.log(carDataobj)
 
 
-showCars(carDataobj);
+
 
 
 localStorage.setItem("carDataBase", JSON.stringify(carDataobj));
 
 
+showCars(carDataobj);
 function showCars(carDataobj){
 
   
