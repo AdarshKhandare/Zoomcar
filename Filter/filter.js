@@ -1,12 +1,3 @@
-// document.querySelectorAll(".list").addEventListener("click",change)
-
-// function change(event){
-    
-//     event.target.style.background = "#10a310";
-//     event.target.style.color = "white";
-
-// }
-
 
 
 var filterpages = [];
@@ -24,7 +15,7 @@ price: "₹707"},
 {
   image: "https://s3-ap-southeast-1.amazonaws.com/zoomcar/photographs/original/57b1b1b9180a56fba0156135ea6dc8e9f058303d.jpg?1621260558",
 loc_km: "3.0 km SANTACRUZ",
-carName: "Renault Wagon R",
+carName: "Maruti Wagon R",
 transmission: "Manual",
 fuelType: "Diesel",
 seater: "5",
@@ -197,6 +188,9 @@ function showCars(carDataobj){
         var bookN = document.createElement("button");
         bookN.style.height="30px";
         bookN.style.margin="1px";
+
+        bookN.setAttribute("class","govindBundi")
+
         bookN.addEventListener("click",function(event){
             event.preventDefault();
             booknowclick(ele);
@@ -232,9 +226,6 @@ function booknowclick(ele){
     bookNowobj.push(ele)
     localStorage.setItem("summaryData",JSON.stringify(bookNowobj));
 }
-
-
-
 
 function click(ele){
   ele.target.style.background = "#10a310";
