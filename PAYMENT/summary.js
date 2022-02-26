@@ -46,7 +46,7 @@ div4.append(img)
 
 var headname = document.createElement("h2");
 headname.innerText = e.carName;
-headname.style.color = "red"
+headname.style.color = "white"
 
 var sumPrice = document.createElement("b")
 sumPrice.innerText = e.price;
