@@ -15,7 +15,7 @@ price: "₹707"},
 {
   image: "https://s3-ap-southeast-1.amazonaws.com/zoomcar/photographs/original/57b1b1b9180a56fba0156135ea6dc8e9f058303d.jpg?1621260558",
 loc_km: "3.0 km SANTACRUZ",
-carName: "Maruti Wagon R",
+carName: "Renault Wagon R",
 transmission: "Manual",
 fuelType: "Diesel",
 seater: "5",
@@ -96,18 +96,16 @@ seater: "5",
 rating: "4.3(53) . 13,234 kms driven",
 price: "₹1,105"},]
 
-
 filterpages.push(carDataobj);
 // console.log(carDataobj)
 
 
-
+showCars(carDataobj);
 
 
 localStorage.setItem("carDataBase", JSON.stringify(carDataobj));
 
 
-showCars(carDataobj);
 function showCars(carDataobj){
 
   
@@ -189,9 +187,6 @@ function showCars(carDataobj){
         var bookN = document.createElement("button");
         bookN.style.height="30px";
         bookN.style.margin="1px";
-
-        bookN.setAttribute("class","govindBundi")
-
         bookN.addEventListener("click",function(event){
             event.preventDefault();
             booknowclick(ele);
@@ -227,6 +222,9 @@ function booknowclick(ele){
     bookNowobj.push(ele)
     localStorage.setItem("summaryData",JSON.stringify(bookNowobj));
 }
+
+
+
 
 function click(ele){
   ele.target.style.background = "#10a310";
@@ -486,6 +484,18 @@ showsummary(sdata)
   }
 
 
+    var signUp=JSON.parse(localStorage.getItem("signupDetails"));
+   
+    var log=document.querySelector(".signup")
+    // var sign=document.querySelector(".signup>a");
+    var customerName = signUp[signUp.length-1].name;
+
+    log.innerText = customerName;
+    sign.innerText = "";
+
+    
+
+    console.log(signUp);
 
   // function kurta() {
   //   var value1 = document.querySelector("#kurta").checked;
@@ -500,21 +510,22 @@ showsummary(sdata)
   //   }
   // }
 
-
+var xxxx = JSON.parse(localStorage.getItem("carDataBase"));
   var seat = document.querySelector("#seat1").addEventListener("click",function(){
-    clicker5()
-    console.log("chandan")
+     
+  clicker5()
   })
-function clicker5(){
-  var value1 = document.querySelector("#seat1").value
+function clicker5() {
+ var value1 = document.querySelector("#seat1").value
+  console.log("value1")
   if(value1 == true){
-    var seatIteam = carDataobj.filter(function(elem,index){
+    var seatIteam = xxxx.filter(function(elem,index){
      return elem.seater == "5"
     });
     showCars(seatIteam)
   }
   else{
-    showCars(carDataobj)
+    showCars(seaterxx)
   }
 
 }

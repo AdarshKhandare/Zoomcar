@@ -13,7 +13,7 @@ function myfunction(event){
     console.log(toShowinFilter)
     console.log(toShowinFilter);
     localStorage.setItem("myJourney",JSON.stringify(toShowinFilter));
-    window.location.href = "../filter/filter.html"
+    window.location.href = "./filter/filter.html"
     
 }
 
