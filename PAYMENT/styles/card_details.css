@@ -73,3 +73,6 @@ button > a {
 #button1 {
   color: grey;
 }
+#button1:hover {
+  background-color: #18a01d;
+}
