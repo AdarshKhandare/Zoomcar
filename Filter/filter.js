@@ -241,6 +241,7 @@ for (var i = 0; i < itemsF.length; i++){
 
 var seaterstack = [];
 function clicker90(){
+  
   var data=JSON.parse(localStorage.getItem("carDataBase"))||[];
   var seaterF = document.querySelector(".list-item").value
   // var data = JSON.parse(localStorage.getItem("carDataBase")) || [];
