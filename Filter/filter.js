@@ -44,7 +44,7 @@ loc_km: "4.2 km Sewri",
 carName: "Maruti Dzire (Petrol)",
 transmission: "Manual",
 fuelType: "Petrol",
-seater: "5",
+seater: "6",
 rating: "4.1(53) . 12,234 kms driven",
 price: "₹1,004"},
 {image: "https://s3-ap-southeast-1.amazonaws.com/zoomcar/photographs/original/d748d92c90c3b84a32f4115da1e5bd3f3f352937.jpg?1615958311",
@@ -60,7 +60,7 @@ loc_km: "5.2 km Sewri",
 carName: "Honda Jazz SV",
 transmission: "Manual",
 fuelType: "Petrol",
-seater: "5",
+seater: "6",
 rating: "4.9(53) . 32,134 kms driven",
 price: "₹1,144"},
 {image: "https://s3-ap-southeast-1.amazonaws.com/zoomcar/photographs/original/4424e7d205d37feda22e11b4465031a5b54cad5c.JPG?1622187205",
@@ -76,7 +76,7 @@ loc_km: "15.2 km Evershine",
 carName: "Hyundai Xcent",
 transmission: "Automatic",
 fuelType: "Petrol",
-seater: "5",
+seater: "7",
 rating: "4.0(53) . 1,234 kms driven",
 price: "₹987"},
 {image: "https://s3-ap-southeast-1.amazonaws.com/zoomcar/photographs/original/505efec88be6f25bb3ffabbd6c6107629c88e169.jpg?1621260721",
@@ -84,7 +84,7 @@ loc_km: "5.2 km Nerul",
 carName: "Datsum Redi-GO",
 transmission: "Automatic",
 fuelType: "Petrol",
-seater: "5",
+seater: "6",
 rating: "4.8(53) . 25,234 kms driven",
 price: "₹896"},
 {image: "https://s3-ap-southeast-1.amazonaws.com/zoomcar/photographs/original/e47541c407f8ee906e9fa81c43c732ada5614617.png?1584526352",
@@ -100,16 +100,16 @@ filterpages.push(carDataobj);
 // console.log(carDataobj)
 
 
-showCars(carDataobj);
+
 
 
 localStorage.setItem("carDataBase", JSON.stringify(carDataobj));
 
-
+var cardata = document.getElementById("cardata")
+showCars(carDataobj);
 function showCars(carDataobj){
 
-  
-
+    cardata.innerHTML = null;
     carDataobj.map(function(ele){
 
         var bigdiv = document.createElement("div");
@@ -213,7 +213,7 @@ function showCars(carDataobj){
 
         bigdiv.append(cardiv,pricediv);
 
-        document.getElementById("right").append(bigdiv);
+        cardata.append(bigdiv);
 
     });
 }
@@ -231,7 +231,6 @@ function click(ele){
 }
 
 var itemsF = document.querySelectorAll(".list > .list-item");
-// console.log(itemsF.length);
 
 for (var i = 0; i < itemsF.length; i++){
 
@@ -239,223 +238,155 @@ for (var i = 0; i < itemsF.length; i++){
   
 }
 
-var seaterstack = [];
+
+
+
+var MaincarData = JSON.parse(localStorage.getItem("carDataBase")) || []
+
+//Free KM Start Here
+var ninty = [];
 function clicker90(){
-  
-  var data=JSON.parse(localStorage.getItem("carDataBase"))||[];
-  var seaterF = document.querySelector(".list-item").value
-  // var data = JSON.parse(localStorage.getItem("carDataBase")) || [];
-  // console.log(seaterF);
+  cardata.innerHTML = null;
+  MaincarData.forEach(function(ele){
 
-  const yahooOnly = JSON.parse(carDataobj).filter(({seater}) => seater === '5');
-  
-  console.log(yahooOnly)
-  // data.map(function(ele){
+    if(ele.seater == "6")
+    {
+       ninty.push(ele);
+         
+    }
+    else{
+      showCars(MaincarData);
+    } 
+  });
+  showCars(ninty); 
 
-  //   if(ele.seater == "6")
-  //   {
-  //      seaterstack.push(ele);   
-  //   } 
-  // });
-  // console.log(seaterstack)
-  showCars(seaterstack);
-  
-  var filterFirst = localStorage.setItem("ninty",JSON.stringify(seaterstack));
-  
 }
 
-function showfilter()
-{
-  var filterninety = JSON.parse(localStorage.getItem("seaterstack"))||[];
-  showfilter(seaterstack);
-  
+var onetwenty = [];
+function clicker120(){
+  cardata.innerHTML = null;
+  MaincarData.forEach(function(ele){
+
+    if(ele.seater == "7")
+    {
+       onetwenty.push(ele);
+         
+    }
+    else{
+      showCars(MaincarData);
+    } 
+  });
+  showCars(onetwenty); 
+
 }
+//Free KM end Here
 
 
 
-// var seaterEx = JSON.parse(localStorage.getItem("ninty")) || [];
-// showCars(seaterEx);
-// function clicker5(ele){
-//   showCars(carDataobj);
-//   var seater5 = document.querySelector(".list-item").value
-//   console.log(seater5);
-//   if(seater5 == "5")
-//   {
-//     console.log("ok")
-//   }
-// }
+//Seater Start Here
 
-// var value = document.querySelectorAll(".list > .list-item");
-// console.log(value.length);
-
-// for (var i = 0; i < value.length; i++){
-
-//   // value[i].addEventListener("click",clicker);
-
-//   if( == 5)
-//   {
-//     value[i].addEventListener("click",clicker);
-//   }
-
-  
-// }
-
-// var pdata=JSON.parse(localStorage.getItem("carDataBase"))||[];
-
-// .filter(function (i,n){
-//   return n.seater==='5';
-// });
-
-
-
-
-
-
+var seat5 = [];
 
 function clicker5(){
 
-  var manual5=
-  [ {image: "https://s3-ap-southeast-1.amazonaws.com/zoomcar/photographs/original/c5d25b436da0aeb9ca1c25c86d8e85a1e9115aaf.JPG?1623135458",
-  loc_km: "2.7 km Magrath Road (Garuda Mall",
-  carName: "Renault Triber",
-  transmission: "Manual",
-  fuelType: "Diesel",
-  seater: "5",
-  rating: "4.9 (56) · 37,136 kms driven",
-  price: "₹707"},
-  {
-    image: "https://s3-ap-southeast-1.amazonaws.com/zoomcar/photographs/original/57b1b1b9180a56fba0156135ea6dc8e9f058303d.jpg?1621260558",
-  loc_km: "2.7 km Magrath Road (Garuda Mall",
-  carName: "Renault Triber",
-  transmission: "Manual",
-  fuelType: "Diesel",
-  seater: "5",
-  rating: "4.9 (56) · 37,136 kms driven",
-  price: "₹600"  
-  
-}]
+  cardata.innerHTML = null;
+  MaincarData.forEach(function(ele){
 
-// clicker5(manual5)
-
-function show5(){
-
-  manual5.map(function(ele){
-
-    var bigdiv = document.createElement("div");
-    bigdiv.setAttribute("id", "bigDiv");
-    bigdiv.style.display = "flex";
-    bigdiv.style.justifyContent = "space-between";
-    // bigdiv.style.border = "1px solid black";
-    bigdiv.style.height = "150px";
-    bigdiv.style.width = "93%";
-    bigdiv.style.padding = "15px";
-    bigdiv.style.marginLeft = "2px"
-    bigdiv.style.boxShadow = "rgba(149, 157, 165, 0.2) 0px 8px 24px"
-
-
-    var cardiv = document.createElement("div");
-    // cardiv.setAttribute("id", "carDiv");
-    cardiv.style.display = "flex";
-    cardiv.style.gap = "20px";
-
-    
-
-    var pricediv =  document.createElement("div");
-    pricediv.setAttribute("id", "priceDiv");
-   
-    
-
-    var imgdiv = document.createElement("div");
-    cardiv.setAttribute("id", "carDiv");
-    // imgdiv.style.width = "100%";
-
-    var imagedd = document.createElement("img");
-
-    imagedd.setAttribute("src", ele.image);
-    imagedd.style.width="200px";
-    imagedd.style.height="150px";
-
-    var detaildiv = document.createElement("div");
-    detaildiv.style.lineHeight = "20px"
-
-    var roadP = document.createElement("p");
-    roadP.innerText = ele.loc_km;
-
-    var carName = document.createElement("h3");
-    carName.innerText = ele.carName;
-    carName.style.lineHeight = "10px"
-
-    var filterDiv = document.createElement("div");
-    filterDiv.style.display = "flex"
-    filterDiv.style.gap = "5px"
-    filterDiv.style.lineHeight = "5px"
-
-    var trasDiv = document.createElement("div");
-
-    trasDiv.innerText = ele.transmission;
-    trasDiv.style.fontSize="12px";
-    trasDiv.style.color="grey"
-
-    var fuelDiv = document.createElement("div");
-    fuelDiv.innerText = ele.fuelType;
-    fuelDiv.style.fontSize="12px";
-    fuelDiv.style.color="grey"
-
-    var seaterDiv = document.createElement("div");
-    seaterDiv.innerText = ele.seater;
-    seaterDiv.style.fontSize="12px";
-    seaterDiv.style.color="grey"
-
-    var ratingP = document.createElement("p");
-    ratingP.innerText ="🌟" + " " +ele.rating;
-  ratingP.style.lineHeight= "50px"
-
-    var priceM = document.createElement("h2");
-    priceM.innerText = ele.price;
-
-    var bookN = document.createElement("button");
-    bookN.style.height="30px";
-    bookN.style.margin="1px";
-    bookN.addEventListener("click",function(event){
-        event.preventDefault();
-        booknowclick(ele);
-
-        // var bookcardetails = JSON.parse(localStorage.getItem("carDataBase")) 
-        // console.log(ele)
-
-      window.location.href = "../PAYMENT/summary.html"
-
-
-    })
-    
-    bookN.innerText = "BOOK NOW"
-    bookN.style.marginTop = "40px"
-
-    cardiv.append(imgdiv,detaildiv)
-    imgdiv.append(imagedd)
-
-    detaildiv.append(roadP,carName,filterDiv,ratingP);
-
-    filterDiv.append(trasDiv,fuelDiv,seaterDiv);
-
-    pricediv.append(priceM,bookN);
-
-    bigdiv.append(cardiv,pricediv);
-
-    document.getElementById("right").append(bigdiv);
-
-});
+    if(ele.seater == "5")
+    {
+       seat5.push(ele);
+         
+    }
+    else{
+      showCars(MaincarData);
+    } 
+  });
+  showCars(seat5); 
 }
-function booknowclick(ele){
-// console.log(ele)
-bookNowobj.push(ele)
-localStorage.setItem("summaryData",JSON.stringify(bookNowobj));
 
+var seat6 = [];
 
+function clicker6(){
+
+  cardata.innerHTML = null;
+  MaincarData.forEach(function(ele){
+
+    if(ele.seater == "6")
+    {
+       seat6.push(ele);
+         
+    }
+    else{
+      showCars(MaincarData);
+    } 
+  });
+  showCars(seat6); 
 }
-show5(manual5)
 
+var seat7 = [];
+
+function clicker7(){
+
+  cardata.innerHTML = null;
+  MaincarData.forEach(function(ele){
+
+    if(ele.seater == "7")
+    {
+       seat7.push(ele);
+         
+    }
+    else{
+      showCars(MaincarData);
+    } 
+  });
+  showCars(seat7); 
 }
+//Seater End Here
+
+//transmission start here
+
+var manual = [];
+
+function Manual(){
+
+  cardata.innerHTML = null;
+  MaincarData.forEach(function(ele){
+
+    if(ele.transmission == "Manual")
+    {
+       manual.push(ele);
+         
+    }
+    else{
+      showCars(MaincarData);
+    } 
+  });
+  showCars(manual); 
+}
+
+var automatic = [];
+
+function Automatic(){
+
+  cardata.innerHTML = null;
+  MaincarData.forEach(function(ele){
+
+    if(ele.transmission == "Automatic")
+    {
+       automatic.push(ele);
+         
+    }
+    else{
+      showCars(MaincarData);
+    } 
+  });
+  showCars(automatic); 
+}
+
+//transmission End here
+
+
+
 
 
 
@@ -485,51 +416,20 @@ showsummary(sdata)
   }
 
 
-    var signUp=JSON.parse(localStorage.getItem("signupDetails"));
+    // var signUp=JSON.parse(localStorage.getItem("signupDetails"));
    
-    var log=document.querySelector(".signup")
-    // var sign=document.querySelector(".signup>a");
-    var customerName = signUp[signUp.length-1].name;
+    // var log=document.querySelector(".signup")
+    // // var sign=document.querySelector(".signup>a");
+    // var customerName = signUp[signUp.length-1].name;
 
-    log.innerText = customerName;
-    sign.innerText = "";
+    // log.innerText = customerName;
+    // sign.innerText = "";
 
     
 
-    console.log(signUp);
+    // console.log(signUp);
 
-  // function kurta() {
-  //   var value1 = document.querySelector("#kurta").checked;
-  //   console.log(value1);
-  //   if (value1 == true) {
-  //     var kurta_item = allWomenDeta.filter(function (elem, index) {
-  //       return elem.type == "kurta";
-  //     });
-  //     displayDataWomen(kurta_item);
-  //   } else {
-  //     displayDataWomen(allWomenDeta)
-  //   }
-  // }
 
-var xxxx = JSON.parse(localStorage.getItem("carDataBase"));
-  var seat = document.querySelector("#seat1").addEventListener("click",function(){
-     
-  clicker5()
-  })
-function clicker5() {
- var value1 = document.querySelector("#seat1").value
-  console.log("value1")
-  if(value1 == true){
-    var seatIteam = xxxx.filter(function(elem,index){
-     return elem.seater == "5"
-    });
-    showCars(seatIteam)
-  }
-  else{
-    showCars(seaterxx)
-  }
-
-}
   
 
 
