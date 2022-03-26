@@ -1,7 +1,4 @@
-var sign=JSON.parse(localStorage.getItem("signupDetails"))
 
-var S=document.querySelector(".signup")
-S.innerText="Pankaj"
 
 var filterpages = [];
 var bookNowobj = [];
@@ -419,18 +416,18 @@ showsummary(sdata)
   }
 
 
-    // var signUp=JSON.parse(localStorage.getItem("signupDetails"));
+    var signUp=JSON.parse(localStorage.getItem("signupDetails"));
    
-    // var log=document.querySelector(".signup")
-    // // var sign=document.querySelector(".signup>a");
-    // var customerName = signUp[signUp.length-1].name;
+    var log=document.querySelector(".signup")
+    // var sign=document.querySelector(".signup>a");
+    var customerName = signUp[signUp.length-1].name;
 
-    // log.innerText = customerName;
-    // sign.innerText = "";
+    log.innerText = customerName;
+    sign.innerText = "";
 
     
 
-    // console.log(signUp);
+    console.log(signUp);
 
 
   
