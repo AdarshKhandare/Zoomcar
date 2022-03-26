@@ -1,0 +1,238 @@
+#top {
+    width: 100%;
+    position: fixed;
+  }
+  #navBar {
+    background-color: black;
+    width: auto;
+    height: 90px;
+    display: flex;
+    margin: auto;
+    font-size: 18px;
+    font-weight: bold;
+  }
+  .navBarLeft {
+    display: flex;
+    width: 40%;
+    height: 100%;
+    margin: auto;
+    justify-content: left;
+  }
+  .navBarRight {
+    display: flex;
+    width: 60%;
+    height: 100%;
+    margin: auto;
+    justify-content: space-between;
+    margin-left: 250px;
+    font-size: 24px;
+  }
+  .zoomLogo {
+    width: 649px;
+    height: 40px;
+  
+    margin: 16px;
+  }
+  #logoSize {
+    margin-left: 55px;
+    width: 200px;
+    height: 60px;
+  }
+  .host {
+    width: 180px;
+    height: 24px;
+    font: 18px;
+    color: white;
+    margin: 24px;
+  }
+  
+  .zms {
+    width: 38.25px;
+    height: 24px;
+    font: 18px;
+    color: white;
+    margin: 24px;
+  }
+  .signup {
+    width: 114.64px;
+    height: 24px;
+    font: 18px;
+    color: white;
+    margin: 24px;
+    
+  }
+  .signup > a{
+    text-decoration: none;
+    color: white;
+  }
+  #nav-container {
+    position: fixed;
+    height: 100vh;
+    width: 100%;
+    pointer-events: none;
+  }
+  #nav-container .bg {
+    position: absolute;
+    top: 70px;
+    left: 0;
+    width: 100%;
+    height: calc(100% - 70px);
+    visibility: hidden;
+    opacity: 0;
+    transition: .3s;
+    background: #000;
+  }
+  #nav-container:focus-within .bg {
+    visibility: visible;
+    opacity: .6;
+  }
+  #nav-container * {
+    visibility: visible;
+  }
+  
+  .button {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    z-index: 1;
+    -webkit-appearance: none;
+    border: 0;
+    background: transparent;
+    border-radius: 0;
+    height: 70px;
+    width: 30px;
+    cursor: pointer;
+    pointer-events: auto;
+    margin-left: 25px;
+    touch-action: manipulation;
+    -webkit-tap-highlight-color: rgba(0,0,0,0);
+  }
+  .icon-bar {
+    display: block;
+    width: 100%;
+    height: 3px;
+    background: #aaa;
+    transition: .3s;
+  }
+  .icon-bar + .icon-bar {
+    margin-top: 5px;
+  }
+  
+  #nav-container:focus-within .button {
+    pointer-events: none;
+    
+  }
+  #nav-container:focus-within .icon-bar:nth-of-type(1) {
+    transform: translate3d(0,8px,0) rotate(45deg);
+  }
+  #nav-container:focus-within .icon-bar:nth-of-type(2) {
+    opacity: 0;
+  }
+  #nav-container:focus-within .icon-bar:nth-of-type(3) {
+    transform: translate3d(0,-8px,0) rotate(-45deg);
+  }
+  
+  #nav-content {
+    margin-top: 70px;
+    padding: 20px;
+    width: 90%;
+    max-width: 300px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: calc(100% - 70px);
+    background: white;
+    pointer-events: auto;
+    -webkit-tap-highlight-color: rgba(0,0,0,0);
+    transform: translateX(-100%);
+    transition: transform .3s;
+    will-change: transform;
+    contain: paint;
+    
+  }
+  
+  #nav-content ul {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+  }
+  
+  #nav-content li a {
+    padding: 10px 5px;
+    display: block;
+    text-transform: uppercase;
+    transition: color .1s;
+  }
+  
+  #nav-content li a:hover {
+    color: #BF7497;
+  }
+  
+  #nav-content li:not(.small) + .small {
+    margin-top: auto;
+  }
+  
+  #nav-container:focus-within #nav-content {
+    transform: none;
+  }
+  ul {
+    padding: 0;
+    list-style: none;
+  }
+
+  
+/* inner content */
+
+*{margin: 0;}
+
+#container{
+    border: 2px solid red;
+    width: 100%;
+    height:auto;
+    padding-top: 100px;
+    display: flex;
+   
+}
+
+  #left
+  {border: 2px solid red;
+  width: 400px;
+  height:600px ;
+  
+   }
+
+button{
+    height: 50px;
+    width: 100px;
+   }
+
+
+   #right{
+       border:2px solid black;
+       width:70%;
+       height: auto;
+     
+   }
+   .input{
+       border: 2px solid green;
+       width: 100%;
+       height: 50px;
+       margin-bottom: 5px;
+   }
+
+   .getHome{
+       border: 2px solid black;
+       width: 100%;
+       height: 60px;
+       line-height: 10px;
+   }
+   
+
+   img{height: 100px;}
+   
+   
+   .getHome>img{
+    width: 30px;
+    height: 30px;
+}

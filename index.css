@@ -122,9 +122,6 @@ body {
   box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
   background-color: #e0e0e0;
 }
-
-
-
 #form {
   margin-top: 150px;
   display: grid;
@@ -448,10 +445,4 @@ img {
 ul {
   padding: 0;
   list-style: none;
-  
-}
-li > a{
-  text-decoration: none;
-  color: #413a45;
-
 }

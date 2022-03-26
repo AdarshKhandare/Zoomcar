@@ -85,7 +85,7 @@
     <input type="password" id="pass" placeholder="PASSWORD">
 </div>
 <!-- <input type="submit" id="h2"  placeholder="CONTINUE" /> -->
-<input type="submit" id="h2" value="CONTINUE" name="submit">
+<input type="submit" id="h2"  value="CONTINUE" >
 </form>
 </body>
 </html>
@@ -107,10 +107,10 @@ hello.push(dataObj)
 console.log(hello)
 localStorage.setItem("signupDetails",JSON.stringify(hello));
 
-// document.querySelector("input[type='submit']")
-// .addEventListener("click" , function(){
+document.querySelector("input[type='submit']")
+.addEventListener("click" , function(){
     window.location.href="/index.html";
-
+});
 
 }
 </script>
