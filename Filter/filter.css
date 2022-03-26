@@ -56,7 +56,7 @@ body{
   color: white;
   margin: 24px;
 }
-.signup {
+.signup > h2 {
   width: 114.64px;
   height: 24px;
   font: 18px;
@@ -64,7 +64,7 @@ body{
   margin: 24px;
   
 }
-.signup > a{
+.signup > h2{
   text-decoration: none;
   color: white;
 }
@@ -533,3 +533,16 @@ ul {
   list-style: none;
 }
 
+li > a{
+  text-decoration: none;
+  color: #413a45;
+
+}
+.signup > h2{
+  margin: 9px 0px 0px 0px;
+}
+
+.active, button:hover{
+
+  background-color: #18a01d;
+}
