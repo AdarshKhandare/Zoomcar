@@ -1,7 +1,6 @@
-document.querySelector("#form").
-addEventListener("submit",myfunction);
+document.querySelector("#form").addEventListener("submit",myfunction);
 var toShowinFilter = JSON.parse(localStorage.getItem("myjourney")) || []
-function myfunction(event){
+function myfunction(){
     event.preventDefault()
     var startJourney = document.querySelector("#start").value
     var endJourney = document.querySelector("#end").value
@@ -10,9 +9,11 @@ function myfunction(event){
         keyEnd : endJourney,
     };
     toShowinFilter.push(pushObj);
-    console.log(toShowinFilter)
+    console.log("pankaj")
     console.log(toShowinFilter);
     localStorage.setItem("myJourney",JSON.stringify(toShowinFilter));
+    window.location.href="../Filter/filter.html"
+
     
 }
 

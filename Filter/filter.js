@@ -1,4 +1,7 @@
+var sign=JSON.parse(localStorage.getItem("signupDetails"))
 
+var S=document.querySelector(".signup")
+S.innerText="Pankaj"
 
 var filterpages = [];
 var bookNowobj = [];
@@ -396,7 +399,7 @@ function Automatic(){
 
 
 var sdata = JSON.parse(localStorage.getItem("myJourney"))
-// console.log(sdata)
+console.log(sdata)
 
 showsummary(sdata)
  function showsummary(sdata){
@@ -404,10 +407,10 @@ showsummary(sdata)
     sdata.map(function(e){
 
       var top = document.createElement("h2")
-      top.innerText = "Start-Point =>"+" "+e.keyStart;
+      top.innerText = "Start-Point :"+" "+e.keyStart;
 
       var bottom = document.createElement("h2");
-      bottom.innerText = "End-Point =>"+" "+e.keyEnd;
+      bottom.innerText = "End-Point :"+" "+e.keyEnd;
 
       document.querySelector(".input").append(top)
       document.querySelector(".input1").append(bottom)
