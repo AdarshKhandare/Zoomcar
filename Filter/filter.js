@@ -281,17 +281,17 @@ function showfilter()
 
 
 
-// var seaterEx = JSON.parse(localStorage.getItem("ninty")) || [];
-// showCars(seaterEx);
-// function clicker5(ele){
-//   showCars(carDataobj);
-//   var seater5 = document.querySelector(".list-item").value
-//   console.log(seater5);
-//   if(seater5 == "5")
-//   {
-//     console.log("ok")
-//   }
-// }
+var seaterEx = JSON.parse(localStorage.getItem("ninty")) || [];
+showCars(seaterEx);
+function clicker5(ele){
+  showCars(carDataobj);
+  var seater5 = document.querySelector(".list-item").value
+  console.log(seater5);
+  if(seater5 == "5")
+  {
+    console.log("ok")
+  }
+}
 
 // var value = document.querySelectorAll(".list > .list-item");
 // console.log(value.length);
